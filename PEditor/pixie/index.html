@@ -42,15 +42,6 @@
 
 <script>
     var pixie = new Pixie({
-    	watermarkText: '',
-    	onLoad: function() {
-    		window.postMessage('pixieLoaded', '*');
-    	},
-    });
-</script>
-
-<script>
-var pixie = new Pixie({
 	tools: {
 		text: {
 			replaceDefault: true,
@@ -70,8 +61,19 @@ var pixie = new Pixie({
 			]
 		}
 	}
-})
+}
+
+{
+    	watermarkText: '',
+    	onLoad: function() {
+    		window.postMessage('pixieLoaded', '*');
+    	},
+    });
 </script>
+
+
+
+
 
 </body>
 </html>
