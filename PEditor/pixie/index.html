@@ -42,27 +42,11 @@
 
 <script>
     var pixie = new Pixie({
-    	{
-	tools: {
-		text: {
-			replaceDefault: true,
-			defaultCategory: 'handwriting',
-			items: [
-				{
-					family: 'Roboto',
-					category: 'serif',
-					filePath: '/robot.ttf',
-					type: 'custom'
-				},
-				{
-					family: 'Lato',
-					category: 'sans-serif',
-					type: 'google',
-				}
-			]
-		}
-	}
-});
+    	watermarkText: '',
+    	onLoad: function() {
+    		window.postMessage('pixieLoaded', '*');
+    	},
+    });
 </script>
 </body>
 </html>
