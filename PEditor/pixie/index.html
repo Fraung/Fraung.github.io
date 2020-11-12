@@ -46,7 +46,29 @@
     	onLoad: function() {
     		window.postMessage('pixieLoaded', '*');
     	},
+{
+	tools: {
+		text: {
+			replaceDefault: false,
+			defaultCategory: 'handwriting',
+			items: [
+				{
+					family: 'Ariel Zawgyi',
+					category: 'Myanmar',
+					filePath: '/test.ttf',
+					type: 'custom'
+				},
+				{
+					family: 'Lato',
+					category: 'sans-serif',
+					type: 'google',
+				}
+			]
+		}
+	}
+}
     });
 </script>
+
 </body>
 </html>
