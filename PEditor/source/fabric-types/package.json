@@ -1,0 +1,76 @@
+{
+  "_from": "@types/fabric@^1.5.48",
+  "_id": "@types/fabric@1.5.48",
+  "_inBundle": false,
+  "_integrity": "sha512-OLwzpwS+qlHK57IVl5ZhU0Z5ZYGgvxtfK3n2IY+mNQUm5jgDRE8Brfcxtm2wnh+JXu8PY+ayHQ5idEVYRxTybg==",
+  "_location": "/@types/fabric",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@types/fabric@^1.5.48",
+    "name": "@types/fabric",
+    "escapedName": "@types%2ffabric",
+    "scope": "@types",
+    "rawSpec": "^1.5.48",
+    "saveSpec": null,
+    "fetchSpec": "^1.5.48"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/fabric/-/fabric-1.5.48.tgz",
+  "_shasum": "e34dc85590ed452528300a098e226bd84d3b9055",
+  "_spec": "@types/fabric@^1.5.48",
+  "_where": "/mnt/e/apps/pixie2",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Oliver Klemencic",
+      "url": "https://github.com/oklemencic"
+    },
+    {
+      "name": "Joseph Livecchi",
+      "url": "https://github.com/joewashear007"
+    },
+    {
+      "name": "Michael Randolph",
+      "url": "https://github.com/mrand01"
+    },
+    {
+      "name": "Tiger Oakes",
+      "url": "https://github.com/NotWoods"
+    },
+    {
+      "name": "Brian Martinson",
+      "url": "https://github.com/bmartinson"
+    },
+    {
+      "name": "Rogerio Teixeira",
+      "url": "https://github.com/RogerioTeixeira"
+    },
+    {
+      "name": "Bradley Hill",
+      "url": "https://github.com/BradleyHill"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "TypeScript definitions for FabricJS",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/fabric",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.1",
+  "types": "index",
+  "typesPublisherContentHash": "20dbf93daf9a3bdffd4c421771436d50b1001e2ec6d23e807cb75d738ab3f85b",
+  "version": "1.5.48"
+}

@@ -1,0 +1,161 @@
+@import "_variables";
+
+$controlsBg-200: #23272E;
+$controlsBg-100: lighten($controlsBg-200, 5%);
+$borderColor: lighten($controlsBg-200, 10%);
+$viewportBg: #1B2024;
+$controlsColor: #DAE5EF;
+
+&.theme-dark {
+  .canvas-wrapper {
+    background-image: none !important;
+    background-color: $viewportBg;
+  }
+
+  toolbar {
+    background: $controlsBg-100;
+    color: $controlsColor;
+  }
+
+  editor-controls {
+    background-color: $controlsBg-200;
+    color: $controlsColor;
+
+    .control-button {
+      mat-icon {
+        color: inherit;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.6));
+      }
+
+      .name {
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+      }
+    }
+
+    .round-action-button {
+      border-color: $borderColor;
+    }
+
+    color-widget .color {
+      border-color: transparent;
+    }
+
+    .button-with-image {
+      background-color: $controlsBg-100;
+      border-color: $borderColor;
+      color: inherit;
+    }
+
+    .separator {
+      background-color: $borderColor;
+    }
+  }
+
+  //editor control drawers
+  .drawer-wrapper {
+    .back-button {
+      background-color: lighten($controlsBg-200, 5%);
+      border: 1px solid $borderColor;
+      box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+      color: inherit;
+    }
+
+    .mat-raised-button[disabled] {
+      color: rgba(255,255,255,0.3);
+      background-color: lighten($controlsBg-200, 5%);
+    }
+
+    .input-container input, .select-font-button {
+      border-color: $borderColor;
+    }
+
+    .mat-checkbox-frame {
+      border-color: lighten($borderColor, 10%);
+    }
+  }
+
+  floating-object-controls {
+    background-color: transparent;
+    box-shadow: none;
+    color: $controlsColor;
+
+    .mat-icon-button {
+      background-color: $controlsBg-100;
+
+      &:disabled {
+        color: rgba(255,255,255,0.3);
+      }
+    }
+  }
+
+  //floating panels
+  .floating-panel {
+    background-color: $controlsBg-200;
+    color: $controlsColor;
+
+    .header {
+      background-color: $controlsBg-100;
+      color: inherit;
+      border-color: $borderColor;
+    }
+
+    .item {
+      border-color: darken($borderColor, 5%);
+      background-color: lighten($controlsBg-200, 2%);
+
+      &.active {
+        color: lighten($controlsColor, 10%);
+        font-weight: 500;
+      }
+    }
+  }
+
+  open-sample-image-panel {
+    .separator {
+      hr {
+        background-color: $borderColor;
+      }
+
+      .text {
+        background-color: $controlsBg-200;
+      }
+    }
+  }
+
+  //material dropdowns
+  .mat-menu-panel {
+    background-color: $controlsBg-100;
+
+    .mat-menu-item {
+      color: $controlsColor;
+    }
+  }
+
+  //custom scrollbar
+  .ps__thumb-x {
+    background-color: lighten($controlsBg-100, 10%);
+  }
+
+  .ps__rail-x:hover > .ps__thumb-x, .ps__rail-x:focus > .ps__thumb-x {
+    background-color: lighten($controlsBg-100, 10%);
+  }
+
+  .ps__rail-x:hover, .ps__rail-y:hover, .ps__rail-x:focus, .ps__rail-y:focus {
+    background-color: transparent;
+  }
+
+  //webkit scrollbar
+  ::-webkit-scrollbar {
+    &:hover {
+      background-color: transparent;
+
+      ::-webkit-scrollbar-thumb {
+        background-color: $controlsBg-100;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: lighten($controlsBg-100, 10%);
+  }
+}

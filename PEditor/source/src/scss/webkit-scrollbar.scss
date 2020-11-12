@@ -1,0 +1,20 @@
+@import "variables";
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $site-bg-color-300;
+
+    ::-webkit-scrollbar-thumb {
+      background-color: darken($site-bg-color-400, 25%);
+    }
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $site-bg-color-400;
+  border-radius: 3px;
+}
