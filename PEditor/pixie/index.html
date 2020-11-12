@@ -41,34 +41,6 @@
 
 
 <script>
-var pixie = new Pixie({
-    onLoad: function() {
-        pixie.getTool('text').add('my text');
-    }
-});
-
-var pixie = new Pixie({
-	tools: {
-		text: {
-			replaceDefault: false,
-			defaultCategory: 'handwriting',
-			items: [
-				{
-					family: 'Roboto',
-					category: 'serif',
-					filePath: '/robot.ttf',
-					type: 'custom'
-				},
-				{
-					family: 'Lato',
-					category: 'sans-serif',
-					type: 'google',
-				}
-			]
-		}
-	}
-});
-
     var pixie = new Pixie({
     	watermarkText: '',
     	onLoad: function() {
