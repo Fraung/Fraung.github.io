@@ -40,6 +40,13 @@
 
 
 
-
+<script>
+    var pixie = new Pixie({
+    	watermarkText: '',
+    	onLoad: function() {
+    		window.postMessage('pixieLoaded', '*');
+    	},
+    });
+</script>
 </body>
 </html>
