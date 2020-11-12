@@ -39,32 +39,8 @@
 <script src="scripts.min.js?v19"></script>
 
 <script>
-var pixie = new Pixie({
-	tools: {
-		text: {
-			replaceDefault: true,
-			defaultCategory: 'handwriting',
-			items: [
-				{
-					family: 'Roboto',
-					category: 'serif',
-					filePath: '/robot.ttf',
-					type: 'custom'
-				},
-				{
-					family: 'Lato',
-					category: 'sans-serif',
-					type: 'google',
-				}
-			]
-		}
-	}
-});
-</script>
-
-<script>
     var pixie = new Pixie({
-    	watermarkText: 'Pixie Demo',
+    	watermarkText: '',
     	onLoad: function() {
     		window.postMessage('pixieLoaded', '*');
     	},
