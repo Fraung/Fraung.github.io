@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.loikawcityguide.myanmarsoft" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Loikaw City Guide</name>
+    <description>
+        Loikaw City guide for all platform OS.
+    </description>
+    <author email="themyanmarsoft@gmail.com" href="https://gmail.com">
+        Myanmarsoft Team
+    </author>
+    <content src="index.html" />
+   <gap:platform name="android"/>
+<preference name="exit-on-suspend" value="true" />
+<preference name="deployment-target" value="7.0" />
+<preference name="LoadUrlTimeoutValue" value="50000"/>
+<preference name="SplashScreen" value="FormGetSplash"/>
+<preference name="SplashScreenDelay" value="20000"/>
+<icon src="icon.png" platform="android" width="180" height="180"/>
+<splash src="splash.png" platform="android" width="180" height="180"/>
+<preference name="ErrorUrl" value="myErrorPage.html"/>
+<feature name="http://api.phonegap.com/1.0/network" />
+<access origin="*" />
+<plugin name="cordova-plugin-whitelist" version="1" />
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+<allow-intent href="tel:*" />
+<allow-intent href="sms:*" />
+<allow-intent href="mailto:*" />
+<allow-intent href="geo:*" />
+</widget>
