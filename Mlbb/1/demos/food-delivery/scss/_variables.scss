@@ -1,0 +1,30 @@
+
+//--FONTS
+$font-body: 'Roboto', sans-serif;
+$font-headings: 'Roboto', sans-serif;
+
+//BODY
+$color-body: #000000;
+$bgcolor-body: #ffffff;
+
+//CUSTOM COLORS
+$color-blue: #2b478b;
+$color-orange: #fd6921;
+
+$color-darkblue: #0d3567;
+$color-lightblue: #83cbf8;
+$color-lighterblue: #edf4ff;
+$color-lightgray: #f6f9fa;
+$color-darkgray: #343434;
+$color-lightgreen: #30e391;
+
+//CUSTOM GRADIENTS BACKGROUNDS
+.gradient-orange{
+	background-color: #fd6921 !important;
+	background: linear-gradient(60deg, #fd6921 0%, #fbb23e 100%) !important;
+}
+
+
+
+
+

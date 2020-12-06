@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<title>Asset 57</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-189.7188" y1="300.2549" x2="-2.719" y2="110.2551" gradientTransform="matrix(1 0 0 -1 194 303)">
+	<stop  offset="0" style="stop-color:#FD6921"/>
+	<stop  offset="1" style="stop-color:#FBB23E"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M175,0H25C11.193,0,0,11.193,0,25v150c0,13.807,11.193,25,25,25h150c13.807,0,25-11.193,25-25V25
+	C200,11.193,188.807,0,175,0z M183.344,175c-0.018,4.602-3.742,8.326-8.344,8.344H25c-4.601-0.018-8.327-3.742-8.344-8.344V25
+	c0.017-4.601,3.743-8.327,8.344-8.344h150c4.602,0.017,8.326,3.743,8.344,8.344V175z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-239.0923" y1="251.6582" x2="-52.0939" y2="61.6598" gradientTransform="matrix(1 0 0 -1 194 303)">
+	<stop  offset="0" style="stop-color:#FD6921"/>
+	<stop  offset="1" style="stop-color:#FBB23E"/>
+</linearGradient>
+<circle fill="url(#SVGID_2_)" cx="52.5" cy="150.5" r="16"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-215.2178" y1="275.1543" x2="-28.2201" y2="85.1566" gradientTransform="matrix(1 0 0 -1 194 303)">
+	<stop  offset="0" style="stop-color:#FD6921"/>
+	<stop  offset="1" style="stop-color:#FBB23E"/>
+</linearGradient>
+<circle fill="url(#SVGID_3_)" cx="99.5" cy="150.5" r="16"/>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-190.3267" y1="299.6504" x2="-3.3297" y2="109.6535" gradientTransform="matrix(1 0 0 -1 194 303)">
+	<stop  offset="0" style="stop-color:#FD6921"/>
+	<stop  offset="1" style="stop-color:#FBB23E"/>
+</linearGradient>
+<circle fill="url(#SVGID_4_)" cx="148.5" cy="150.5" r="16"/>
+</svg>

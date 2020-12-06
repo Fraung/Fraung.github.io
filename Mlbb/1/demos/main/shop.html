@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+<title>MobioKit - Premium Mobile Template</title>
+<link rel="stylesheet" href="../../vendor/swiper/swiper.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
+</head>
+<body>
+	
+<!-- Overlay panel -->
+<div class="body-overlay"></div>
+<!-- Left panel -->
+<div id="panel-left"></div>
+<!-- Right panel -->
+<div id="panel-right-cart">
+	<div class="panel panel--right">
+            <div class="cart">
+			<h3 class="cart__title">Your Shopping Cart</h3>
+			<div class="swiper-container slider-init-swipe cart__item" id="item0">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cart__item-details">
+						<div class="cart__item-thumb cart__item-thumb--round-corners"><a href="shop-details.html"><img src="../../assets/images/products/image-6.jpg" alt="" title=""/></a></div>
+						<h4 class="cart__item-title">Smart Chair <span>$40</span></h4>
+						<div class="cart__item-qty">
+							<form id="myform" method="POST" action="#" class="quantity quantity--small">
+								<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity1" />
+								<input type="text" name="quantity1" value="1" class="quantity__input" />
+								<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity1" />
+							</form>
+						</div>
+						<div class="cart__item-more" data-swipe-item="0"><img src="../../assets/images/icons/blue/more.svg" alt="" title=""/></div>
+					</div>
+					<div class="swiper-slide cart__item-delete"><a href="#" class="delete-item" data-delete-item="0">REMOVE</a></div>
+				</div>
+			</div>
+			
+			<div class="swiper-container slider-init-swipe cart__item" id="item1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cart__item-details">
+						<div class="cart__item-thumb cart__item-thumb--round-corners"><a href="shop-details.html"><img src="../../assets/images/products/image-1.jpg" alt="" title=""/></a></div>
+						<h4 class="cart__item-title">Designer Bag<span>$580</span></h4>
+						<div class="cart__item-qty">
+							<form id="myform" method="POST" action="#" class="quantity quantity--small">
+								<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity2" />
+								<input type="text" name="quantity2" value="1" class="quantity__input" />
+								<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity2" />
+							</form>
+						</div>
+						<div class="cart__item-more" data-swipe-item="1"><img src="../../assets/images/icons/blue/more.svg" alt="" title=""/></div>
+					</div>
+					<div class="swiper-slide cart__item-delete"><a href="#" class="delete-item" data-delete-item="1">REMOVE</a></div>
+				</div>
+			</div>
+			
+			<div class="swiper-container slider-init-swipe cart__item" id="item2">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cart__item-details">
+						<div class="cart__item-thumb cart__item-thumb--round-corners"><a href="shop-details.html"><img src="../../assets/images/products/image-5.jpg" alt="" title=""/></a></div>
+						<h4 class="cart__item-title">Smart Watch <span>$250</span></h4>
+						<div class="cart__item-qty">
+							<form id="myform" method="POST" action="#" class="quantity quantity--small">
+								<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity3" />
+								<input type="text" name="quantity3" value="1" class="quantity__input" />
+								<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity3" />
+							</form>
+						</div>
+						<div class="cart__item-more" data-swipe-item="2"><img src="../../assets/images/icons/blue/more.svg" alt="" title=""/></div>
+					</div>
+					<div class="swiper-slide cart__item-delete"><a href="#" class="delete-item" data-delete-item="2">REMOVE</a></div>
+				</div>
+			</div>
+			
+			<div class="swiper-container slider-init-swipe cart__item" id="item3">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cart__item-details">
+						<div class="cart__item-thumb cart__item-thumb--round-corners"><a href="shop-details.html"><img src="../../assets/images/products/image-3.jpg" alt="" title=""/></a></div>
+						<h4 class="cart__item-title">Brand Shoes<span>$80</span></h4>
+						<div class="cart__item-qty">
+							<form id="myform" method="POST" action="#" class="quantity quantity--small">
+								<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity4" />
+								<input type="text" name="quantity4" value="1" class="quantity__input" />
+								<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity4" />
+							</form>
+						</div>
+						<div class="cart__item-more" data-swipe-item="3"><img src="../../assets/images/icons/blue/more.svg" alt="" title=""/></div>
+					</div>
+					<div class="swiper-slide cart__item-delete"><a href="#" class="delete-item" data-delete-item="3">REMOVE</a></div>
+				</div>
+			</div>
+			<div class="cart__total">
+			  <div class="d-flex align-items-center justify-space pb-10">
+				<span>CART TOTAL</span>  <b>$ 950.00</b>
+			  </div>
+			  <div class="d-flex align-items-center justify-space pb-10">
+				<span>VAT (10%)</span>  <b>$ 95.00</b>
+			  </div>
+			  <div class="total d-flex align-items-center justify-space pb-10">
+				<span>TOTAL</span> <strong>$ 1,045.00</strong>
+			  </div>
+			</div>
+			<div class="buttons buttons--centered mt-20">
+				<a href="checkout.html" class="button button--main button--full">PROCEED TO CHECKOUT</a>
+			</div>
+              </div>
+	</div>
+</div>
+
+
+<div class="page page--main" data-page="shop">
+	
+	<header class="header header--page header--fixed">	
+		<div class="header__inner">	
+			<div class="header__icon header__icon--menu open-panel" data-panel="left"><span></span><span></span><span></span><span></span><span></span><span></span></a></div>
+			<div class="header__logo header__logo--text"><a href="#">Mobio<strong>Kit</strong></a></div>	
+			<div class="header__icon header__icon--cart open-panel" data-panel="right"><img src="../../assets/images/icons/white/cart.svg" alt="" title=""/><span class="cart-items-nr">0</span></div>
+                </div>
+	</header>
+	
+	<!-- PAGE CONTENT -->
+	<div class="page__content page__content--with-header">
+		<h2 class="page__title">Shop</h2>
+		
+		<p class="welcome">
+		Sell your products directly on your website or app using the Shop layout design. Cart, checkout sections are included as well.
+		</p>
+		
+		<div class="page__title-bar">
+			<h3>Top Products</h3>
+			
+			<div class="page__title-right">
+				<div class="swiper-button-prev slider-thumbs__prev"></div>
+				<div class="swiper-button-next slider-thumbs__next"></div>
+			</div>
+		</div>
+		
+		<!-- SLIDER THUMBS -->
+		<div class="swiper-container slider-thumbs slider-init mb-20" data-paginationtype="progressbar" data-spacebetweenitems="10" data-itemsperview="auto">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--1h">
+					<div class="slider-thumbs__image slider-thumbs__image--round-corners">
+					<a href="shop-details.html"><img src="../../assets/images/products/image-1.jpg" alt="" title=""/></a>
+						<div class="slider-thumbs__top-right-info">
+							<div class="slider-thumbs__price">$580</div>
+						</div>
+						<div class="slider-thumbs__bottom-right-info">
+							<div class="slider-thumbs__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+						</div>
+					</div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title">Designer Bag</h2>
+							<a class="caption__category" href="shop.html">FASHION</a>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--1h">
+					<div class="slider-thumbs__image slider-thumbs__image--round-corners">
+					<a href="shop-details.html"><img src="../../assets/images/products/image-2.jpg" alt="" title=""/></a>
+						<div class="slider-thumbs__top-right-info">
+							<div class="slider-thumbs__price">$90</div>
+						</div>
+						<div class="slider-thumbs__bottom-right-info">
+							<div class="slider-thumbs__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+						</div>
+					</div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title">Premium Cosmetics</h2>
+							<a class="caption__category" href="shop.html">COSMETICS</a>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--1h">
+					<div class="slider-thumbs__image slider-thumbs__image--round-corners">
+					<a href="shop-details.html"><img src="../../assets/images/products/image-3.jpg" alt="" title=""/></a>
+						 <div class="slider-thumbs__badge"><span>SALE</span></div>
+						<div class="slider-thumbs__top-right-info">
+							<div class="slider-thumbs__price">$60 <span>120</span></div>
+						</div>
+						<div class="slider-thumbs__bottom-right-info">
+							<div class="slider-thumbs__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+						</div>
+					</div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title">Brand Shoes</h2>
+							<a class="caption__category" href="shop.html">SHOES</a>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--1h">
+					<div class="slider-thumbs__image slider-thumbs__image--round-corners">
+					<a href="shop-details.html"><img src="../../assets/images/products/image-4.jpg" alt="" title=""/></a>
+						<div class="slider-thumbs__top-right-info">
+							<div class="slider-thumbs__price">$105</div>
+						</div>
+						<div class="slider-thumbs__bottom-right-info">
+							<div class="slider-thumbs__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+						</div>
+					</div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title">Sneakers</h2>
+							<a class="caption__category" href="shop.html">SHOES</a>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--1h">
+					<div class="slider-thumbs__image slider-thumbs__image--round-corners">
+					<a href="shop-details.html"><img src="../../assets/images/products/image-5.jpg" alt="" title=""/></a>
+						<div class="slider-thumbs__top-right-info">
+							<div class="slider-thumbs__price">$240</div>
+						</div>
+						<div class="slider-thumbs__bottom-right-info">
+							<div class="slider-thumbs__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+						</div>
+					</div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title">Smart Watch</h2>
+							<a class="caption__category" href="shop.html">GADGETS</a>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--1h">
+					<div class="slider-thumbs__image slider-thumbs__image--round-corners">
+					<a href="shop-details.html"><img src="../../assets/images/products/image-6.jpg" alt="" title=""/></a>
+						<div class="slider-thumbs__top-right-info">
+							<div class="slider-thumbs__price">$190</div>
+						</div>
+						<div class="slider-thumbs__bottom-right-info">
+							<div class="slider-thumbs__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+						</div>
+					</div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title">Chair White</h2>
+							<a class="caption__category" href="shop.html">FURNITURE</a>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--1h">
+					<div class="slider-thumbs__image slider-thumbs__image--round-corners">
+					<a href="shop-details.html"><img src="../../assets/images/products/image-7.jpg" alt="" title=""/></a>
+						<div class="slider-thumbs__top-right-info">
+							<div class="slider-thumbs__price">$70</div>
+						</div>
+						<div class="slider-thumbs__bottom-right-info">
+							<div class="slider-thumbs__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+						</div>
+					</div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title">Desk Lamp</h2>
+							<a class="caption__category" href="shop.html">DECORATIONS</a>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--1h">
+					<div class="slider-thumbs__image slider-thumbs__image--round-corners">
+					<a href="shop-details.html"><img src="../../assets/images/products/image-8.jpg" alt="" title=""/></a>
+						<div class="slider-thumbs__top-right-info">
+							<div class="slider-thumbs__price">$130</div>
+						</div>
+						<div class="slider-thumbs__bottom-right-info">
+							<div class="slider-thumbs__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+						</div>
+					</div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title">Glasses</h2>
+							<a class="caption__category" href="shop.html">EYEWEAR</a>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="swiper-pagination slider-thumbs__pagination"></div>
+	
+		</div>
+		
+		<div class="page__title-bar">
+			<h3>Browse Categories</h3>
+			
+			<div class="page__title-right">
+				<div class="swiper-button-prev slider-thumbs__prev"></div>
+				<div class="swiper-button-next slider-thumbs__next"></div>
+			</div>
+		</div>
+		
+		<!-- SLIDER THUMBS 4 round -->
+		<div class="swiper-container slider-thumbs slider-init mb-20" data-paginationtype="progressbar" data-spacebetweenitems="10" data-itemsperview="auto">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--4">
+					<div class="slider-thumbs__icon slider-thumbs__icon--round-corners"><a href="#"><img src="../../assets/images/icons/blue/clothes.svg" alt="" title=""/></a></div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title caption__title--smaller caption__title--centered">Fashion</h2>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--4">
+					<div class="slider-thumbs__icon slider-thumbs__icon--round-corners"><a href="#"><img src="../../assets/images/icons/blue/electronics.svg" alt="" title=""/></a></div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title caption__title--smaller caption__title--centered">Electronics</h2>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--4">
+					<div class="slider-thumbs__icon slider-thumbs__icon--round-corners"><a href="#"><img src="../../assets/images/icons/blue/sport.svg" alt="" title=""/></a></div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title caption__title--smaller caption__title--centered">Sport</h2>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--4">
+					<div class="slider-thumbs__icon slider-thumbs__icon--round-corners"><a href="#"><img src="../../assets/images/icons/blue/gifts.svg" alt="" title=""/></a></div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title caption__title--smaller caption__title--centered">Gifts</h2>
+						</div>
+					</div>
+				</div> 
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--4">
+					<div class="slider-thumbs__icon slider-thumbs__icon--round-corners"><a href="#"><img src="../../assets/images/icons/blue/jewellery.svg" alt="" title=""/></a></div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title caption__title--smaller caption__title--centered">Jewellery</h2>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide slider-thumbs__slide slider-thumbs__slide--4">
+					<div class="slider-thumbs__icon slider-thumbs__icon--round-corners"><a href="#"><img src="../../assets/images/icons/blue/home.svg" alt="" title=""/></a></div>
+					<div class="slider-thumbs__caption caption">
+						<div class="caption__content">
+							<h2 class="caption__title caption__title--smaller caption__title--centered">Furniture</h2>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="swiper-pagination slider-thumbs__pagination"></div>
+	
+		</div>
+
+		<div class="page__title-bar">
+			<h3>Latest Products</h3>
+		</div>		
+	        
+              <div class="cards cards--12" id="loadlist-shop">
+			  <div class="card card--style-thumb">
+				  <div class="card__thumb card__thumb--round-corners">
+					  <a href="shop-details.html"><img src="../../assets/images/products/image-4.jpg" alt="" title=""/></a>
+					   <div class="card__top-right-info">
+						<div class="card__price">$130</div>
+					  </div>
+					  <div class="card__bottom-right-info">
+						<div class="card__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+					  </div>
+				  </div>
+				  <h4 class="card__title">Man Sneakers</h4>
+				  <p class="card__text">Smart description of your product</p>
+
+			  </div>
+			  <div class="card card--style-thumb">
+				 <div class="card__thumb card__thumb--round-corners">
+					  <a href="shop-details.html"><img src="../../assets/images/products/image-7.jpg" alt="" title=""/></a>
+					  <div class="card__badge"><span>SALE</span></div>
+					  <div class="card__top-right-info">
+						<div class="card__price">$170 <span>$250</span></div>
+					  </div>
+					 <div class="card__bottom-right-info">
+						<div class="card__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+					 </div>
+				  </div>
+				  <h4 class="card__title">Metal Desk Lamp</h4>
+				  <p class="card__text">Smart description of your product</p>
+			  </div>
+			  <div class="card card--style-thumb">
+				  <div class="card__thumb card__thumb--round-corners">
+					  <a href="shop-details.html"><img src="../../assets/images/products/image-1.jpg" alt="" title=""/></a>
+					   <div class="card__top-right-info">
+						<div class="card__price">$580</div>
+					  </div>
+					  <div class="card__bottom-right-info">
+						<div class="card__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+					  </div>
+				  </div>
+				  <h4 class="card__title">Designer Bag</h4>
+				  <p class="card__text">Smart description of your product</p>
+
+			  </div>
+			  <div class="card card--style-thumb">
+				 <div class="card__thumb card__thumb--round-corners">
+					  <a href="shop-details.html"><img src="../../assets/images/products/image-3.jpg" alt="" title=""/></a>
+					  <div class="card__top-right-info">
+						<div class="card__price">$80</div>
+					  </div>
+					 <div class="card__bottom-right-info">
+						<div class="card__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+					 </div>
+				  </div>
+				  <h4 class="card__title">Brand Shoes</h4>
+				  <p class="card__text">Smart description of your product</p>
+			  </div>
+			  <div class="card card--style-thumb">
+				  <div class="card__thumb card__thumb--round-corners">
+					  <a href="shop-details.html"><img src="../../assets/images/products/image-5.jpg" alt="" title=""/></a>
+					   <div class="card__top-right-info">
+						<div class="card__price">$250</div>
+					  </div>
+					  <div class="card__bottom-right-info">
+						<div class="card__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+					  </div>
+				  </div>
+				  <h4 class="card__title">Smart Watch</h4>
+				  <p class="card__text">Smart description of your product</p>
+
+			  </div>
+			  <div class="card card--style-thumb">
+				 <div class="card__thumb card__thumb--round-corners">
+					  <a href="shop-details.html"><img src="../../assets/images/products/image-6.jpg" alt="" title=""/></a>
+					  <div class="card__top-right-info">
+						<div class="card__price">$40</div>
+					  </div>
+					 <div class="card__bottom-right-info">
+						<div class="card__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+					 </div>
+				  </div>
+				  <h4 class="card__title">White Chair</h4>
+				  <p class="card__text">Smart description of your product</p>
+			  </div>
+			  <div class="card card--style-thumb">
+				  <div class="card__thumb card__thumb--round-corners">
+					  <a href="shop-details.html"><img src="../../assets/images/products/image-2.jpg" alt="" title=""/></a>
+					   <div class="card__top-right-info">
+						<div class="card__price">$250</div>
+					  </div>
+					  <div class="card__bottom-right-info">
+						<div class="card__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+					  </div>
+				  </div>
+				  <h4 class="card__title">Premium Cosmetics</h4>
+				  <p class="card__text">Smart description of your product</p>
+
+			  </div>
+			  <div class="card card--style-thumb">
+				 <div class="card__thumb card__thumb--round-corners">
+					  <a href="shop-details.html"><img src="../../assets/images/products/image-8.jpg" alt="" title=""/></a>
+					  <div class="card__top-right-info">
+						<div class="card__price">$130</div>
+					  </div>
+					 <div class="card__bottom-right-info">
+						<div class="card__addtocart addtocart"><a href="#"><img src="../../assets/images/icons/black/cart.svg" alt="" title=""/></a></div>
+					 </div>
+				  </div>
+				  <h4 class="card__title">Glasses</h4>
+				  <p class="card__text">Smart description of your product</p>
+			  </div>
+              </div>
+	      <div class="buttons buttons--centered mb-20">
+			<div id="loadMore" class="button button--more">View more</div>
+			<div id="showLess" class="button button--disabled">No more products</div> 
+	      </div>
+
+	</div>
+
+
+</div>
+<!-- PAGE END -->
+
+
+<!-- Social Icons Popup -->
+<div id="popup-social"></div>
+ 
+<!-- Alert --> 
+<div id="popup-alert"></div>  
+
+<!-- Notifications --> 
+<div id="popup-notifications"></div>  
+
+<script src="../../vendor/jquery/jquery-3.5.1.min.js"></script>
+<script src="../../vendor/swiper/swiper.min.js"></script>
+<script src="js/swiper-init.js"></script>
+<script src="js/swiper-init-swipe.js"></script>
+<script src="js/jquery.custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<title>Asset 38</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="85.6563" y1="68.6719" x2="121.6563" y2="68.6719">
+	<stop  offset="0" style="stop-color:#DF72FF"/>
+	<stop  offset="1" style="stop-color:#7C41F3"/>
+</linearGradient>
+<rect x="85.656" y="60.344" fill="url(#SVGID_1_)" width="36" height="16.656"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-5.5459" y1="9.2451" x2="174.4541" y2="196.2451">
+	<stop  offset="0" style="stop-color:#DF72FF"/>
+	<stop  offset="1" style="stop-color:#7C41F3"/>
+</linearGradient>
+<rect x="33.656" y="60.344" fill="url(#SVGID_2_)" width="36" height="16.656"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="3.2397" y1="0.7886" x2="183.2397" y2="187.7886">
+	<stop  offset="0" style="stop-color:#DF72FF"/>
+	<stop  offset="1" style="stop-color:#7C41F3"/>
+</linearGradient>
+<rect x="33.344" y="93" fill="url(#SVGID_3_)" width="133.344" height="16.656"/>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-12.7485" y1="16.1787" x2="167.2515" y2="203.1787">
+	<stop  offset="0" style="stop-color:#DF72FF"/>
+	<stop  offset="1" style="stop-color:#7C41F3"/>
+</linearGradient>
+<rect x="33.344" y="125" fill="url(#SVGID_4_)" width="133.344" height="16.656"/>
+<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="4.145" y1="-0.083" x2="184.145" y2="186.917">
+	<stop  offset="0" style="stop-color:#DF72FF"/>
+	<stop  offset="1" style="stop-color:#7C41F3"/>
+</linearGradient>
+<path fill="url(#SVGID_5_)" d="M175,2H25C11.193,2,0,13.193,0,27v64.5v34V172c0,13.807,11.193,25,25,25h150
+	c13.807,0,25-11.193,25-25v-46.5v-34V27C200,13.193,188.807,2,175,2z M183.344,125.5V172c-0.018,4.602-3.742,8.326-8.344,8.344H25
+	c-4.601-0.018-8.327-3.742-8.344-8.344v-46.5v-34V27c0.017-4.601,3.743-8.327,8.344-8.344h150c4.602,0.017,8.326,3.743,8.344,8.344
+	v64.5V125.5z"/>
+</svg>

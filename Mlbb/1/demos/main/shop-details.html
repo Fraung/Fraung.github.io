@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+<title>MobioKit - Premium Mobile Template</title>
+<link rel="stylesheet" href="../../vendor/swiper/swiper.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
+</head>
+<body>
+	
+<!-- Overlay panel -->
+<div class="body-overlay"></div>
+<!-- Left panel -->
+<div id="panel-left"></div>
+<!-- Right panel -->
+<div id="panel-right-cart">
+	<div class="panel panel--right">
+            <div class="cart">
+			<h3 class="cart__title">Your Shopping Cart</h3>
+			<div class="swiper-container slider-init-swipe cart__item" id="item0">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cart__item-details">
+						<div class="cart__item-thumb cart__item-thumb--round-corners"><a href="shop-details.html"><img src="../../assets/images/products/image-6.jpg" alt="" title=""/></a></div>
+						<h4 class="cart__item-title">Smart Chair <span>$40</span></h4>
+						<div class="cart__item-qty">
+							<form id="myform" method="POST" action="#" class="quantity quantity--small">
+								<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity1" />
+								<input type="text" name="quantity1" value="1" class="quantity__input" />
+								<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity1" />
+							</form>
+						</div>
+						<div class="cart__item-more" data-swipe-item="0"><img src="../../assets/images/icons/blue/more.svg" alt="" title=""/></div>
+					</div>
+					<div class="swiper-slide cart__item-delete"><a href="#" class="delete-item" data-delete-item="0">REMOVE</a></div>
+				</div>
+			</div>
+			
+			<div class="swiper-container slider-init-swipe cart__item" id="item1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cart__item-details">
+						<div class="cart__item-thumb cart__item-thumb--round-corners"><a href="shop-details.html"><img src="../../assets/images/products/image-1.jpg" alt="" title=""/></a></div>
+						<h4 class="cart__item-title">Designer Bag<span>$580</span></h4>
+						<div class="cart__item-qty">
+							<form id="myform" method="POST" action="#" class="quantity quantity--small">
+								<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity2" />
+								<input type="text" name="quantity2" value="1" class="quantity__input" />
+								<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity2" />
+							</form>
+						</div>
+						<div class="cart__item-more" data-swipe-item="1"><img src="../../assets/images/icons/blue/more.svg" alt="" title=""/></div>
+					</div>
+					<div class="swiper-slide cart__item-delete"><a href="#" class="delete-item" data-delete-item="1">REMOVE</a></div>
+				</div>
+			</div>
+			
+			<div class="swiper-container slider-init-swipe cart__item" id="item2">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cart__item-details">
+						<div class="cart__item-thumb cart__item-thumb--round-corners"><a href="shop-details.html"><img src="../../assets/images/products/image-5.jpg" alt="" title=""/></a></div>
+						<h4 class="cart__item-title">Smart Watch <span>$250</span></h4>
+						<div class="cart__item-qty">
+							<form id="myform" method="POST" action="#" class="quantity quantity--small">
+								<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity3" />
+								<input type="text" name="quantity3" value="1" class="quantity__input" />
+								<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity3" />
+							</form>
+						</div>
+						<div class="cart__item-more" data-swipe-item="2"><img src="../../assets/images/icons/blue/more.svg" alt="" title=""/></div>
+					</div>
+					<div class="swiper-slide cart__item-delete"><a href="#" class="delete-item" data-delete-item="2">REMOVE</a></div>
+				</div>
+			</div>
+			
+			<div class="swiper-container slider-init-swipe cart__item" id="item3">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide cart__item-details">
+						<div class="cart__item-thumb cart__item-thumb--round-corners"><a href="shop-details.html"><img src="../../assets/images/products/image-3.jpg" alt="" title=""/></a></div>
+						<h4 class="cart__item-title">Brand Shoes<span>$80</span></h4>
+						<div class="cart__item-qty">
+							<form id="myform" method="POST" action="#" class="quantity quantity--small">
+								<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity4" />
+								<input type="text" name="quantity4" value="1" class="quantity__input" />
+								<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity4" />
+							</form>
+						</div>
+						<div class="cart__item-more" data-swipe-item="3"><img src="../../assets/images/icons/blue/more.svg" alt="" title=""/></div>
+					</div>
+					<div class="swiper-slide cart__item-delete"><a href="#" class="delete-item" data-delete-item="3">REMOVE</a></div>
+				</div>
+			</div>
+			<div class="cart__total">
+			  <div class="d-flex align-items-center justify-space pb-10">
+				<span>CART TOTAL</span>  <b>$ 950.00</b>
+			  </div>
+			  <div class="d-flex align-items-center justify-space pb-10">
+				<span>VAT (10%)</span>  <b>$ 95.00</b>
+			  </div>
+			  <div class="total d-flex align-items-center justify-space pb-10">
+				<span>TOTAL</span> <strong>$ 1,045.00</strong>
+			  </div>
+			</div>
+			<div class="buttons buttons--centered mt-20">
+				<a href="checkout.html" class="button button--main button--full">PROCEED TO CHECKOUT</a>
+			</div>
+              </div>
+	</div>
+</div>
+
+
+<div class="page page--main" data-page="shop">
+
+	<!-- PAGE CONTENT -->
+	<div class="page__content page__content--with-bottom-nav">
+	
+		<header class="header header--gradient header--fixed header--change">	
+				<div class="header__inner">	
+					<div class="header__icon"><a href="shop.html"><img src="../../assets/images/icons/white/arrow-back.svg" alt="" title=""/></a></div>
+					<div class="header__icon header__icon--cart open-panel" data-panel="right"><img src="../../assets/images/icons/white/cart.svg" alt="" title=""/><span class="cart-items-nr">0</span></div>
+				</div>
+		</header>
+	
+		<!-- SLIDER SIMPLE -->
+		<div class="swiper-container slider-simple slider-simple slider-simple--vw-width mb-20 slider-init" data-paginationtype="bullets" data-spacebetweenitems="0" data-itemsperview="1">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slider-simple__slide" style="background-image:url(../../assets/images/products/image-6.jpg);">
+				</div> 
+				<div class="swiper-slide slider-simple__slide" style="background-image:url(../../assets/images/products/image-9.jpg);">
+				</div>
+				<div class="swiper-slide slider-simple__slide" style="background-image:url(../../assets/images/products/image-10.jpg);">
+				</div>
+			</div>
+			<div class="swiper-pagination slider-simple__pagination"></div>
+			 <div class="shop-details-share"><a href="#" data-popup="social" class="open-popup"><img src="../../assets/images/icons/white/love.svg" alt="" title=""/></a></div>
+		</div>
+
+		<div class="d-flex justify-space align-items-center mb-20">
+			<h2 class="page__title mb-0">Smart Chair</h2>
+			<div class="shop-details-price">$40</div>
+		</div>
+		
+		<p class="welcome">
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. 
+		</p>
+		<h3>Select size</h3>
+                <div class="size-selectors">                
+                        <div class="size-selectors__input"> 
+				<input id="size_s" type="radio" name="size" value="s">  
+				<label for="size_s">S</label>
+		        </div>
+			<div class="size-selectors__input"> 
+				<input id="size_m" type="radio" name="size" value="m" checked="checked">
+				<label for="size_m">M</label> 
+			</div>	
+			<div class="size-selectors__input"> 
+				<input id="size_l" type="radio" name="size" value="l">     
+				<label for="size_l">L</label>
+			</div>	
+			<div class="size-selectors__input"> 
+				<input id="size_xl" type="radio" name="size" value="xl">  
+				<label for="size_xl">XL</label>
+			</div>	
+			<div class="size-selectors__input"> 
+				<input id="size_xxl" type="radio" name="size" value="xxl">
+				<label for="size_xxl">XXL</label> 
+			</div>	
+                </div> 
+		<h3>Select color</h3>
+		<div class="color-selectors">    
+			<div class="size-selectors__input"> 				
+				<input id="color_gray" type="radio" name="color" value="gray" checked="checked">  
+				<label for="color_gray" class="gray"></label>
+			</div>
+			<div class="size-selectors__input"> 				
+				<input id="color_red" type="radio" name="color" value="red">  
+				<label for="color_red" class="red"></label>
+			</div>	
+			<div class="size-selectors__input"> 
+				<input id="color_orange" type="radio" name="color" value="orange">
+				<label for="color_orange" class="orange"></label> 
+			</div>	
+			<div class="size-selectors__input"> 
+				<input id="color_yellow" type="radio" name="color" value="yellow">
+				<label for="color_yellow" class="yellow"></label> 
+			</div>	
+			<div class="size-selectors__input"> 
+				<input id="color_green" type="radio" name="color" value="green">  
+				<label for="color_green" class="green"></label>
+			</div>	
+			<div class="size-selectors__input"> 
+				<input id="color_blue" type="radio" name="color" value="blue">
+				<label for="color_blue" class="blue"></label> 
+			</div>	
+			<div class="size-selectors__input"> 
+				<input id="color_black" type="radio" name="color" value="black">
+				<label for="color_black" class="black"></label> 
+			</div>	
+		</div> 		
+				
+	
+	</div>
+
+
+</div>
+<!-- PAGE END -->
+
+<!-- Bottom navigation -->
+<div id="bottom-toolbar-shop" class="bottom-toolbar">
+	<div class="bottom-navigation">
+		<div class="bottom-navigation__shop">
+			<div class="bottom-navigation__shop-qty">
+				<form id="myform" method="POST" action="#" class="quantity">
+					<input type="button" value="-" class="quantity__button quantity__button--minus" field="quantity" />
+					<input type="text" name="quantity" value="1" class="quantity__input" />
+					<input type="button" value="+" class="quantity__button quantity__button--plus" field="quantity" />
+				</form>
+			</div>
+			<div class="bottom-navigation__shop-cart button button--small button--main addtocart">ADD TO CART</div>
+		</div>
+	</div>	
+</div>
+
+<!-- Social Icons Popup -->
+<div id="popup-social"></div>
+ 
+<!-- Alert --> 
+<div id="popup-alert"></div>  
+
+<!-- Notifications --> 
+<div id="popup-notifications"></div>  
+
+<script src="../../vendor/jquery/jquery-3.5.1.min.js"></script>
+<script src="../../vendor/swiper/swiper.min.js"></script>
+<script src="js/swiper-init.js"></script>
+<script src="js/swiper-init-swipe.js"></script>
+<script src="js/jquery.custom.js"></script>
+</body>
+</html>

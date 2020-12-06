@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
+<title>MobioKit - Premium Mobile Template</title>
+<link rel="stylesheet" href="../../vendor/plyr/plyr.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
+</head>
+<body>
+	
+<!-- Overlay panel -->
+<div class="body-overlay"></div>
+<!-- Left panel -->
+<div id="panel-left"></div>
+<!-- Right panel -->
+<div id="panel-right"></div>
+
+
+<div class="page page--main" data-page="music">
+	
+	<header class="header header--page header--fixed">	
+		<div class="header__inner">	
+			<div class="header__icon"><a href="main.html"><img src="../../assets/images/icons/white/arrow-back.svg" alt="" title=""/></a></div>
+			<div class="header__logo header__logo--text"><a href="#">Mobio<strong>Kit</strong></a></div>
+			<div class="header__icon header__icon--empty-space"></div>			
+			
+                </div>
+	</header>
+	
+	<!-- PAGE CONTENT -->
+	<div class="page__content page__content--with-header">
+		<h2 class="page__title">Music Player</h2>
+		
+		<p class="welcome">
+		Hey DJ! With this layout you can create your own music app and allow your fans to listen your custom tracks and sounds.
+		</p>
+		
+
+		<div class="music-player">
+			<ul class="music-player__list" id="playlist"></ul>
+			<div class="music-player__toolbar music-toolbar">
+				<div class="music-toolbar__header">
+					<div class="song-status"><span id="music-toolbar-info">Paused...</span></div>
+					<div class="song-title"><span id="music-toolbar-title"></span></div>
+				</div>
+				<div class="music-toolbar__controls">
+					<div id="audio0">
+						<audio id="audio1" preload controls>Your browser does not support HTML5 Audio! ??</audio>
+					</div>
+				</div>
+				<div class="music-toolbar__navigation">	
+					<a id="musicPrev"><img src="../../assets/images/icons/white/arrow-left-circle.svg" alt="" title=""/></a>
+					<a id="musicNext"><img src="../../assets/images/icons/white/arrow-right-circle.svg" alt="" title=""/></a>
+				</div>
+			</div>
+		</div>
+		
+
+	
+
+	</div>
+
+
+</div>
+<!-- PAGE END -->
+
+
+<!-- Social Icons Popup -->
+<div id="popup-social"></div>
+ 
+<!-- Alert --> 
+<div id="popup-alert"></div>  
+
+<!-- Notifications --> 
+<div id="popup-notifications"></div>  
+
+<script src="../../vendor/jquery/jquery-3.5.1.min.js"></script>
+<script src="../../vendor/plyr/plyr.min.js"></script>
+<script src="../../vendor/plyr/html5media.min.js"></script>
+<script src="js/jquery.custom.js"></script>
+</body>
+</html>
