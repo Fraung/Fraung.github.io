@@ -1,0 +1,11 @@
+<toolbar *ngIf="!(toolbarHidden$ | async)"></toolbar>
+
+<editor-controls *ngIf="(controlsPosition$ | async) === 'top'" class="position-top"></editor-controls>
+
+<div class="canvas-wrapper" #canvasWrapper backgroundImage="images/viewport-bg.png">
+    <div class="canvas-mask-wrapper not-loaded" #canvasMaskWrapper [class.empty]="!(contentLoaded$ | async)" backgroundImage="images/canvas-bg.png">
+        <canvas id="pixie-canvas"></canvas>
+    </div>
+</div>
+
+<editor-controls *ngIf="(controlsPosition$ | async) === 'bottom'" class="position-bottom"></editor-controls>

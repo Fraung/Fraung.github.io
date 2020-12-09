@@ -1,0 +1,80 @@
+@import "../../../../scss/_variables";
+
+toolbar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  color: $site-text-color-100;
+  background-color: $site-primary-color-100;
+  position: relative;
+  z-index: 3;
+  @include mat-elevation(1);
+
+  .open-button, .mobile-open-button {
+    position: relative;
+  }
+
+  .mat-menu-trigger {
+    display: block;
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+  }
+
+  > .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    text-transform: capitalize;
+
+    .current {
+      margin: 0 8px;
+    }
+
+    .value {
+      text-align: center;
+    }
+  }
+
+  > .left {
+    margin-right: auto;
+  }
+
+  > .right {
+    margin-left: auto;
+
+    .toggle-history-button {
+      margin-left: 40px;
+    }
+  }
+
+  .drawer-name {
+    font-size: 15px;
+  }
+
+  .status-bar {
+    height: 30px;
+    background-color: $site-primary-color-200;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .close-button {
+    margin-left: 25px;
+  }
+
+  .open-button mat-icon {
+      margin-right: 5px;
+  }
+
+  .export-button mat-icon {
+    margin-right: 2px;
+  }
+
+  .invisible {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,76 @@
+<ng-container *ngIf="compactMode | async; else desktopToolbar">
+    <ng-container *ngIf="activePanel$ | async as activePanel">
+        <div class="left">
+            <button mat-icon-button (click)="executeOpenButtonAction()" *ngIf="activePanel === 'navigation'" [class.invisible]="config.get('pixie.ui.toolbar.hideOpenButton')" class="mobile-open-button">
+                <span class="mat-menu-trigger" [matMenuTriggerFor]="openMenu"></span>
+                <mat-icon svgIcon="photo-library"></mat-icon>
+            </button>
+
+            <button mat-icon-button (click)="cancelChanges()" *ngIf="activePanel !== 'navigation'">
+                <mat-icon svgIcon="close"></mat-icon>
+            </button>
+        </div>
+        <div class="center drawer-name">
+            <span *ngIf="activePanel !== 'navigation'" trans>{{getToolDisplayName(activePanel)}}</span>
+            <span *ngIf="activePanel === 'navigation'" trans>Editor</span>
+        </div>
+        <div class="right">
+            <button mat-icon-button (click)="applyChanges()" *ngIf="activePanel !== 'navigation'">
+                <mat-icon svgIcon="check"></mat-icon>
+            </button>
+
+            <button mat-icon-button (click)="exportImage()" *ngIf="activePanel === 'navigation'" [class.invisible]="config.get('pixie.ui.toolbar.hideSaveButton')">
+                <mat-icon svgIcon="file-download"></mat-icon>
+            </button>
+        </div>
+    </ng-container>
+</ng-container>
+
+<ng-template #desktopToolbar>
+    <div class="left">
+        <button mat-button (click)="executeOpenButtonAction()" [class.invisible]="config.get('pixie.ui.toolbar.hideOpenButton')" class="open-button">
+            <span class="mat-menu-trigger" [matMenuTriggerFor]="openMenu"></span>
+            <mat-icon svgIcon="photo-library"></mat-icon>
+            <span class="name" trans>Open</span>
+        </button>
+        <button mat-button (click)="exportImage()" [class.invisible]="config.get('pixie.ui.toolbar.hideSaveButton')" class="export-button">
+            <mat-icon svgIcon="file-download"></mat-icon>
+            <span class="name" trans>Save</span>
+        </button>
+    </div>
+    <div class="center" *ngIf="config.get('pixie.ui.allowZoom')">
+        <button mat-icon-button (click)="zoomOut()">
+            <mat-icon svgIcon="remove"></mat-icon>
+        </button>
+        <div class="current">
+            <div trans>Zoom</div>
+            <div class="value">{{zoom$ | async}}%</div>
+        </div>
+        <button mat-icon-button (click)="zoomIn()">
+            <mat-icon svgIcon="add"></mat-icon>
+        </button>
+    </div>
+    <div class="right">
+        <button mat-icon-button [disabled]="!(canUndo$ | async)" (click)="history.undo()">
+            <mat-icon svgIcon="undo"></mat-icon>
+        </button>
+        <button mat-icon-button [disabled]="!(canRedo$ | async)" (click)="history.redo()">
+            <mat-icon svgIcon="redo"></mat-icon>
+        </button>
+        <button class="toggle-history-button" mat-icon-button (click)="panels.toggleHistory()">
+            <mat-icon svgIcon="history"></mat-icon>
+        </button>
+        <button mat-icon-button (click)="panels.toggleObjects()">
+            <mat-icon svgIcon="layers"></mat-icon>
+        </button>
+        <button mat-icon-button class="close-button" (click)="closeEditor()" *ngIf="(mode$ | async) === 'overlay' && !config.get('pixie.ui.toolbar.hideCloseButton')">
+            <mat-icon svgIcon="close"></mat-icon>
+        </button>
+    </div>
+</ng-template>
+
+<mat-menu #openMenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item (click)="openBackgroundImage()" trans>Background Image</button>
+    <button mat-menu-item (click)="openOverlayImage()" trans>Overlay Image</button>
+    <button mat-menu-item (click)="openStateFile()" trans>Editor Project File</button>
+</mat-menu>
