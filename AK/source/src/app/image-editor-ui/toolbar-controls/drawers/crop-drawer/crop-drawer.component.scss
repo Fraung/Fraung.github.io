@@ -1,0 +1,85 @@
+@import "../../../../../scss/variables";
+
+crop-drawer {
+  display: block;
+
+  .custom-ratio-container {
+    padding-right: 10px;
+    border-right: 1px solid $site-border-color-200;
+
+    .input-container {
+      display: inline-block;
+      width: auto;
+      margin: 0 15px;
+      text-align: center;
+
+      &.checkbox-container {
+        text-align: left;
+      }
+
+      > input {
+        width: 95px;
+        height: 45px;
+        border-radius: 3px;
+      }
+
+      > label {
+        padding: 0;
+      }
+
+      > .mat-checkbox {
+        display: block;
+
+        &:first-of-type {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .aspect-ratios {
+    display: flex;
+    align-items: flex-end;
+
+    > .aspect-ratio {
+      cursor: pointer;
+      padding: 0 20px;
+
+      &.selected {
+        color: $site-accent-color;
+      }
+
+      &:hover .name {
+        color: $site-accent-color;
+      }
+
+      > .preview {
+        width: 40px;
+        height: 30px;
+        border: 3px solid currentColor;
+      }
+
+      > .name {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 6px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1168px) {
+    .custom-ratio-container {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $medium) {
+    &.controls-drawer .content {
+      justify-content: flex-start;
+    }
+
+    .custom-ratio-container {
+      display: none;
+    }
+  }
+}

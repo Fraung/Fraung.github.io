@@ -1,0 +1,8 @@
+<button
+        class="select-font-button no-style"
+        (click)="openGoogleFontsPanel()"
+        [style.fontFamily]="selectedFont$ | async"
+>
+  <span class="text">{{selectedFont$ | async}}</span>
+  <mat-icon svgIcon="keyboard-arrow-down"></mat-icon>
+</button>

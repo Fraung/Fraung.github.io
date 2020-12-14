@@ -1,0 +1,26 @@
+@import "../../../scss/variables";
+
+text-preview {
+  display: block;
+  background-color: $site-bg-color-100;
+  @include mat-elevation(3);
+  width: 80%;
+  min-height: 80%;
+  color: $site-text-color-400;
+  word-wrap: break-word;
+  padding: 20px;
+  overflow: auto;
+
+  @media only screen and (max-width: $medium) {
+    width: 90%;
+  }
+
+  pre {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: inherit;
+  }
+}

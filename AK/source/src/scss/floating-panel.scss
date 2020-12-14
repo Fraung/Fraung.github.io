@@ -1,0 +1,78 @@
+@import "../scss/variables";
+
+.cdk-overlay-backdrop {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.floating-panel {
+  display: block;
+  min-width: 250px;
+  background-color: $site-bg-color-100;
+  @include mat-elevation(3);
+  overflow: hidden;
+  user-select: none;
+
+  @media only screen and (max-width: $medium) {
+    width: 90%;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    color: $site-text-color-100;
+    border-bottom: 1px solid $site-border-color-200;
+    background-color: $site-primary-color-200;
+
+    .close-button {
+      margin-left: auto;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .items-list {
+    height: auto;
+    max-height: 300px;
+    user-select: none;
+
+    .reorder-item-wrapper {
+      padding: 5px 10px;
+
+      .floating-panel-item {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.floating-panel-item {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin: 10px;
+  padding: 0 5px;
+  border: 1px solid $site-border-color-200;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  text-transform: capitalize;
+
+  &.active {
+    border-color: $site-primary-color-100;
+  }
+
+  &.disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  &:hover {
+    @include mat-elevation(1);
+  }
+
+  .list-icon {
+    margin-right: 5px;
+  }
+}

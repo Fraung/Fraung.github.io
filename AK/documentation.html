@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<style>
+		body {
+			color: #3b454e;
+			margin: 0 auto;
+			padding: 40px; 
+			max-width: 800px;
+			overflow: auto;
+			font-size: 15px;
+			font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+		}
+
+		h1 {
+			font-size: 42px;
+			font-weight: 400;
+			margin: 0;
+		}
+
+		h2 {
+			font-size: 24px;
+			font-weight:400;
+			padding-top: 30px;
+			margin-top: 45px;
+			border-top: 1px solid #e0e0e0;
+		}
+
+		h2:first-of-type {
+			border-top: none;
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		h2 a {
+			color: inherit;
+			text-decoration: none
+		}
+
+		h3 {
+			font-size: 23px;
+			font-weight: 400;
+			margin: 0 0 5px;
+		}
+
+		p {
+			margin: 10px 0 25px;
+			letter-spacing: .3px;
+			overflow: hidden;
+			line-height: 24px;
+		}
+
+		:not(pre) > code {
+			font-family: Droid Sans Mono,monospace;
+			background-color: #f1f1f1;
+			border-radius: 4px;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+			font-size: 75%;
+			color: #c7254e;
+			padding: 2px 4px;
+			letter-spacing: 0;
+		}
+
+		.widget {
+			background-color: #f3fbf7;
+			max-width: 100%;
+			padding: 14px;
+			margin: 35px 0;
+			border-radius: 3px;
+			overflow-wrap: break-word;
+			border-left: 5px solid #5ac891;
+			font-size: 17px;
+		}
+		</style>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/themes/prism.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500"
+	</head>
+	<body>
+
+		<h2>Online Documention</h2>
+
+		<p>More documentation and help can be found at our online <a href="https://support.vebto.com/help-center/articles/10/13/50/getting-started">help center</a>.</p>
+		
+		<h2 id="download-pixie"><a href="#download-pixie">Download pixie</a></h2>
+		<p>Download <a href="http://codecanyon.net/item/pixie-image-editor/10721475?ref=Vebto">latest version</a> and extract it. Afterwards, you will be left with two folders: <code>source</code> and <code>pixie</code>. <code>source</code> folder contains all original source code for pixie. <code>pixie</code> folder contains the files needed to actually use pixie, it has this simple structure:</p>
+		<div class="img-container"><img src="https://support.vebto.com/storage/article-images/9xx5rjSQj1ezfLbWlT7SMF5Fkp67QmpRSnFpNsq1.png"></div>
+		<h2 id="quickstart"><a href="#quickstart">QuickStart</a></h2>
+		<p>If you want to preview or use pixie as fast as possible, simply upload <strong>contents</strong> of <code>pixie</code> folder to your server and open your site url. You can open <code>index.html</code> file with a text editor to change pixie configuration.</p>
+		<h2 id="integrating"><a href="#integrating">Integrating</a></h2>
+		<p>In order to integrate pixie into existing project, copy <code>pixie</code> folder into your project. Then simply link to the <code>scripts.min.js</code> and <code>styles.min.js</code> files inside your project, like so:</p>
+<pre><code class="language-html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="pixie/styles.min.css"&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;script src="pixie/scripts.min.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+		<p>Now, create a <code>&lt;pixie-editor&gt;&lt;/pixie-editor&gt;</code> tag as a container for the editor. Pixie will adapt its size according to the dimensions of the container (if dimensions are not provided in configuration).</p>
+<pre><code class="language-html">&lt;div class="some-container"&gt;
+    &lt;pixie-editor&gt;&lt;/pixie-editor&gt;
+&lt;/div&gt;
+</code></pre>
+		<p>Finally, in order to initialize pixie, instantiate it using JavaScript. Add the following code right below pixie <code>&lt;script src="pixie/scripts.min.js"&gt;&lt;/script&gt;</code> tag:</p>
+<pre><code class="language-javascript">var pixie = new Pixie({
+    urls: {
+       base: 'https://baseUrl.com/pixie, //optional
+       assets: 'https://baseUrl.com/pixie/assets, //optional
+    }
+    onLoad: function() {
+        console.log('Pixie is ready');
+    }
+});
+</code></pre>
+		<div class="widget widget-note">
+		<div class="title">Note:</div>
+		This is a basic example. You can load and instantiate pixie asynchronously by adding pixie script tag dynamically in your code or by using&nbsp;<code>async</code> script attribute.</div>
+		<p>This is all that is required to get pixie up and running.Here is the whole source code of the html file:</p>
+<pre><code class="language-html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="pixie/styles.min.css"&gt;
+        &lt;link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;pixie-editor&gt;&lt;/pixie-editor&gt;
+    ​
+        &lt;script src="pixie/scripts.min.js"&gt;&lt;/script&gt;
+    ​
+        &lt;script&gt;
+            var pixie = new Pixie({
+                onLoad: function() {
+                    console.log('Pixie is ready');
+                }
+            });
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.14.0/prism.min.js"></script>
+
+	</body>
+</html>
